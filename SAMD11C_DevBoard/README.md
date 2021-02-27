@@ -57,7 +57,6 @@ If you want to install a bootloader without the Arduino IDE, refer to the readme
 1. [SAM D11 Family Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42363-SAM-D11_Datasheet.pdf)
 2. [Arduino SAMD Core](https://github.com/arduino/ArduinoCore-samd)
 3. [MattairTech SAMD Core](https://github.com/mattairtech/ArduinoCore-samd)
-4. [UF2-SAMDX1 Bootloader](https://github.com/microsoft/uf2-samdx1)
 
 ![SAMD11C_DevBoard_pic1.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD11C_DevBoard/documentation/SAMD11C_DevBoard_pic1.jpg)
 ![SAMD11C_DevBoard_pic2.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD11C_DevBoard/documentation/SAMD11C_DevBoard_pic2.jpg)
