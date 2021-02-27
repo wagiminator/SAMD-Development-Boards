@@ -46,7 +46,7 @@ All microcontrollers have the following features:
 - I/O Pin Current: max 7mA
 
 # Pinout
-[SAMD21E_DevBoard_pinout.png](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD21E_DevBoard/documentation/SAMD21E_DevBoard_pinout.png)
+![SAMD21E_DevBoard_pinout.png](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD21E_DevBoard/documentation/SAMD21E_DevBoard_pinout.png)
 
 # Preparing Arduino IDE and Installing Bootloader
 - [Install SAMD Core](https://github.com/wagiminator/SAMD-Development-Boards/tree/main/ArduinoCore-samd)
@@ -72,9 +72,9 @@ If you want to install a bootloader without the Arduino IDE, refer to the readme
 3. [MattairTech SAMD Core](https://github.com/mattairtech/ArduinoCore-samd)
 4. [UF2-SAMDX1 Bootloader](https://github.com/microsoft/uf2-samdx1)
 
-[SAMD21E_DevBoard_pic1.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD21E_DevBoard/documentation/SAMD21E_DevBoard_pic1.jpg)
-[SAMD21E_DevBoard_pic2.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD21E_DevBoard/documentation/SAMD21E_DevBoard_pic2.jpg)
-[SAMD21E_DevBoard_pic3.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD21E_DevBoard/documentation/SAMD21E_DevBoard_pic3.jpg)
+![SAMD21E_DevBoard_pic1.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD21E_DevBoard/documentation/SAMD21E_DevBoard_pic1.jpg)
+![SAMD21E_DevBoard_pic2.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD21E_DevBoard/documentation/SAMD21E_DevBoard_pic2.jpg)
+![SAMD21E_DevBoard_pic3.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD21E_DevBoard/documentation/SAMD21E_DevBoard_pic3.jpg)
 
 # License
 ![license.png](https://i.creativecommons.org/l/by-sa/3.0/88x31.png)
