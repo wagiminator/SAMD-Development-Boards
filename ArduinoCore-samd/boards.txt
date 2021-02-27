@@ -1,0 +1,389 @@
+# Copyright (c) 2014-2017 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+# Modified 2021 by Stefan Wagner, https://github.com/wagiminator
+
+menu.cpu=Microcontroller
+menu.clock=Clock Source
+menu.usb=USB Config
+menu.serial=Serial Config
+menu.bootloader=Bootloader
+menu.timer=Timer PWM Frequency
+menu.float=Floating Point
+menu.config=Build Options
+
+
+# =================================================================
+# SAMD21E DevBoard
+# =================================================================
+d21e.name=SAMD21E DevBoard
+d21e.vid.0=0x16D0
+d21e.pid.0=0x0557
+d21e.vid.1=0x16D0
+d21e.pid.1=0x0856
+d21e.vid.2=0x16D0
+d21e.pid.2=0x0B41
+d21e.vid.3=0x16D0
+d21e.pid.3=0x0B40
+d21e.vid.4=0x16D0
+d21e.pid.4=0x0A0C
+d21e.vid.5=0x16D0
+d21e.pid.5=0x0856
+d21e.build.mcu=cortex-m0plus
+d21e.build.mathlib=arm_cortexM0l_math
+d21e.build.f_cpu=48000000L
+d21e.build.usb_product="SAMD21E DevBoard"
+d21e.build.usb_manufacturer="Wagiminator"
+d21e.build.board=SAMD_ZERO
+d21e.build.core=arduino
+d21e.build.variant=SAMD21E
+d21e.build.variant_system_lib=
+d21e.build.vid=0x16D0
+d21e.upload.protocol=sam-ba
+d21e.bootloader.tool=arduino:openocd
+
+d21e.menu.float.default=Print & String use auto-promoted doubles only
+d21e.menu.float.default.build.floatconfig=FLOAT_BOTH_DOUBLES_ONLY
+d21e.menu.float.print=Print uses separate singles and doubles
+d21e.menu.float.print.build.floatconfig=FLOAT_PRINT_SINGLES_DOUBLES
+d21e.menu.float.string=String uses separate singles and doubles
+d21e.menu.float.string.build.floatconfig=FLOAT_STRING_SINGLES_DOUBLES
+d21e.menu.float.both=Print & String use separate singles and doubles
+d21e.menu.float.both.build.floatconfig=FLOAT_BOTH_SINGLES_DOUBLES
+d21e.menu.config.disabled=config.h disabled
+d21e.menu.config.disabled.build.buildconfig=CONFIG_H_DISABLED
+d21e.menu.config.enabled=config.h enabled (mostly code size reductions)
+d21e.menu.config.enabled.build.buildconfig=CONFIG_H_ENABLED
+
+d21e.menu.clock.crystal_32k=32kHz Crystal (default)
+d21e.menu.clock.crystal_32k.build.clockconfig=CLOCKCONFIG_32768HZ_CRYSTAL
+#d21e.menu.clock.crystal_hs=High Speed Crystal
+#d21e.menu.clock.crystal_hs.build.clockconfig=CLOCKCONFIG_HS_CRYSTAL
+d21e.menu.clock.internal=Internal Oscillator
+d21e.menu.clock.internal.build.clockconfig=CLOCKCONFIG_INTERNAL
+d21e.menu.clock.internal_usb=Internal USB Calibrated Oscillator
+d21e.menu.clock.internal_usb.build.clockconfig=CLOCKCONFIG_INTERNAL_USB
+
+d21e.menu.timer.timer_732Hz=732.4Hz (16-bit)
+d21e.menu.timer.timer_732Hz.build.timerconfig=TIMER_732Hz
+d21e.menu.timer.timer_366Hz=366.2Hz (16-bit)
+d21e.menu.timer.timer_366Hz.build.timerconfig=TIMER_366Hz
+d21e.menu.timer.timer_244Hz=244.1Hz (16-bit)
+d21e.menu.timer.timer_244Hz.build.timerconfig=TIMER_244Hz
+d21e.menu.timer.timer_183Hz=183.1Hz (16-bit)
+d21e.menu.timer.timer_183Hz.build.timerconfig=TIMER_183Hz
+d21e.menu.timer.timer_146Hz=146.5Hz (16-bit)
+d21e.menu.timer.timer_146Hz.build.timerconfig=TIMER_146Hz
+d21e.menu.timer.timer_122Hz=122.1Hz (16-bit)
+d21e.menu.timer.timer_122Hz.build.timerconfig=TIMER_122Hz
+d21e.menu.timer.timer_105Hz=104.6Hz (16-bit)
+d21e.menu.timer.timer_105Hz.build.timerconfig=TIMER_105Hz
+d21e.menu.timer.timer_81Hz=81.38Hz (16-bit)
+d21e.menu.timer.timer_81Hz.build.timerconfig=TIMER_81Hz
+d21e.menu.timer.timer_61Hz=61.04Hz (16-bit)
+d21e.menu.timer.timer_61Hz.build.timerconfig=TIMER_61Hz
+d21e.menu.timer.timer_31Hz=30.52Hz (16-bit)
+d21e.menu.timer.timer_31Hz.build.timerconfig=TIMER_31Hz
+d21e.menu.timer.timer_187500Hz=187500Hz (8-bit)
+d21e.menu.timer.timer_187500Hz.build.timerconfig=TIMER_187500Hz
+d21e.menu.timer.timer_93750Hz=93750Hz (8-bit)
+d21e.menu.timer.timer_93750Hz.build.timerconfig=TIMER_93750Hz
+d21e.menu.timer.timer_62500Hz=62500Hz (8-bit)
+d21e.menu.timer.timer_62500Hz.build.timerconfig=TIMER_62500Hz
+d21e.menu.timer.timer_37500Hz=37500Hz (8-bit)
+d21e.menu.timer.timer_37500Hz.build.timerconfig=TIMER_37500Hz
+d21e.menu.timer.timer_20833Hz=20833Hz (8-bit)
+d21e.menu.timer.timer_20833Hz.build.timerconfig=TIMER_20833Hz
+d21e.menu.timer.timer_12500Hz=12500Hz (8-bit)
+d21e.menu.timer.timer_12500Hz.build.timerconfig=TIMER_12500Hz
+d21e.menu.timer.timer_7500Hz=7500Hz (8-bit)
+d21e.menu.timer.timer_7500Hz.build.timerconfig=TIMER_7500Hz
+d21e.menu.timer.timer_4166Hz=4166Hz (8-bit)
+d21e.menu.timer.timer_4166Hz.build.timerconfig=TIMER_4166Hz
+d21e.menu.timer.timer_2930Hz=2930Hz (8-bit)
+d21e.menu.timer.timer_2930Hz.build.timerconfig=TIMER_2930Hz
+d21e.menu.timer.timer_1465Hz=1465Hz (8-bit)
+d21e.menu.timer.timer_1465Hz.build.timerconfig=TIMER_1465Hz
+
+d21e.menu.cpu.samd21e18a=SAMD21E18A
+d21e.menu.cpu.samd21e18a.upload.maximum_size=253952
+d21e.menu.cpu.samd21e18a.build.extra_flags=-D__SAMD21E18A__ {build.usb_flags} -DARM_MATH_CM0PLUS
+d21e.menu.cpu.samd21e18a.build.ldscript=flash_256KB.ld
+d21e.menu.cpu.samd21e18a.build.openocdscript=openocd_scripts/SAMD21E18A.cfg
+d21e.menu.cpu.samd21e18a.bootloader.file=sam_uf2_SAMD21E_DevBoard_SAMD21E18A.bin
+
+d21e.menu.cpu.samd21e17a=SAMD21E17A
+d21e.menu.cpu.samd21e17a.upload.maximum_size=122880
+d21e.menu.cpu.samd21e17a.build.extra_flags=-D__SAMD21E17A__ {build.usb_flags} -DARM_MATH_CM0PLUS
+d21e.menu.cpu.samd21e17a.build.ldscript=flash_128KB.ld
+d21e.menu.cpu.samd21e17a.build.openocdscript=openocd_scripts/SAMD21E17A.cfg
+d21e.menu.cpu.samd21e17a.bootloader.file=sam_ba_SAMD21E_DevBoard_SAMD21E17A.bin
+
+d21e.menu.cpu.samd21e16a=SAMD21E16A
+d21e.menu.cpu.samd21e16a.upload.maximum_size=57344
+d21e.menu.cpu.samd21e16a.build.extra_flags=-D__SAMD21E16A__ {build.usb_flags} -DARM_MATH_CM0PLUS
+d21e.menu.cpu.samd21e16a.build.ldscript=flash_64KB.ld
+d21e.menu.cpu.samd21e16a.build.openocdscript=openocd_scripts/SAMD21E16A.cfg
+d21e.menu.cpu.samd21e16a.bootloader.file=sam_ba_SAMD21E_DevBoard_SAMD21E16A.bin
+
+d21e.menu.cpu.samd21e16b=SAMD21E16B
+d21e.menu.cpu.samd21e16b.upload.maximum_size=57344
+d21e.menu.cpu.samd21e16b.build.extra_flags=-D__SAMD21E16B__ {build.usb_flags} -DARM_MATH_CM0PLUS
+d21e.menu.cpu.samd21e16b.build.ldscript=flash_64KB.ld
+d21e.menu.cpu.samd21e16b.build.openocdscript=openocd_scripts/SAMD21E16A.cfg
+d21e.menu.cpu.samd21e16b.bootloader.file=sam_ba_SAMD21E_DevBoard_SAMD21E16B.bin
+
+d21e.menu.cpu.samd21e15a=SAMD21E15A
+d21e.menu.cpu.samd21e15a.upload.maximum_size=24576
+d21e.menu.cpu.samd21e15a.build.extra_flags=-D__SAMD21E15A__ {build.usb_flags} -DARM_MATH_CM0PLUS
+d21e.menu.cpu.samd21e15a.build.ldscript=flash_32KB.ld
+d21e.menu.cpu.samd21e15a.build.openocdscript=openocd_scripts/SAMD21E15A.cfg
+d21e.menu.cpu.samd21e15a.bootloader.file=sam_ba_SAMD21E_DevBoard_SAMD21E15A.bin
+
+d21e.menu.cpu.samd21e15b=SAMD21E15B
+d21e.menu.cpu.samd21e15b.upload.maximum_size=24576
+d21e.menu.cpu.samd21e15b.build.extra_flags=-D__SAMD21E15B__ {build.usb_flags} -DARM_MATH_CM0PLUS
+d21e.menu.cpu.samd21e15b.build.ldscript=flash_32KB.ld
+d21e.menu.cpu.samd21e15b.build.openocdscript=openocd_scripts/SAMD21E15A.cfg
+d21e.menu.cpu.samd21e15b.bootloader.file=sam_ba_SAMD21E_DevBoard_SAMD21E15B.bin
+
+d21e.menu.bootloader.8kb=8kB Bootloader
+d21e.menu.bootloader.8kb.build.bootloader_size=__8KB_BOOTLOADER__
+d21e.menu.bootloader.8kb.build.ldscript_path=linker_scripts/gcc/8KB_Bootloader
+d21e.menu.bootloader.8kb.upload.tool=SAMD_DevBoards:bossac
+d21e.menu.bootloader.8kb.upload.use_1200bps_touch=true
+d21e.menu.bootloader.8kb.upload.wait_for_upload_port=true
+d21e.menu.bootloader.8kb.upload.native_usb=true
+
+#d21e.menu.bootloader.16kb=16kB Bootloader
+#d21e.menu.bootloader.16kb.build.bootloader_size=__16KB_BOOTLOADER__
+#d21e.menu.bootloader.16kb.build.ldscript_path=linker_scripts/gcc/16KB_Bootloader
+#d21e.menu.bootloader.16kb.upload.tool=SAMD_DevBoards:bossac
+#d21e.menu.bootloader.16kb.upload.use_1200bps_touch=true
+#d21e.menu.bootloader.16kb.upload.wait_for_upload_port=true
+#d21e.menu.bootloader.16kb.upload.native_usb=true
+
+d21e.menu.bootloader.0kb=No Bootloader
+d21e.menu.bootloader.0kb.build.bootloader_size=__NO_BOOTLOADER__
+d21e.menu.bootloader.0kb.build.ldscript_path=linker_scripts/gcc/No_Bootloader
+d21e.menu.bootloader.0kb.upload.tool=arduino:openocd
+d21e.menu.bootloader.0kb.upload.use_1200bps_touch=false
+d21e.menu.bootloader.0kb.upload.wait_for_upload_port=false
+d21e.menu.bootloader.0kb.upload.native_usb=false
+
+d21e.menu.serial.one_uart=1x UART, 1x WIRE, 1x SPI
+d21e.menu.serial.one_uart.build.serialcom_uart=ONE_UART
+d21e.menu.serial.one_uart.build.serialcom_wire=ONE_WIRE
+d21e.menu.serial.one_uart.build.serialcom_spi=ONE_SPI
+d21e.menu.serial.one_uart_one_wire_two_spi=1x UART, 1x WIRE, 2x SPI
+d21e.menu.serial.one_uart_one_wire_two_spi.build.serialcom_uart=ONE_UART
+d21e.menu.serial.one_uart_one_wire_two_spi.build.serialcom_wire=ONE_WIRE
+d21e.menu.serial.one_uart_one_wire_two_spi.build.serialcom_spi=TWO_SPI
+d21e.menu.serial.one_uart_two_wire_one_spi=1x UART, 2x WIRE, 1x SPI
+d21e.menu.serial.one_uart_two_wire_one_spi.build.serialcom_uart=ONE_UART
+d21e.menu.serial.one_uart_two_wire_one_spi.build.serialcom_wire=TWO_WIRE
+d21e.menu.serial.one_uart_two_wire_one_spi.build.serialcom_spi=ONE_SPI
+d21e.menu.serial.two_uart=2x UART, 1x WIRE, 1x SPI
+d21e.menu.serial.two_uart.build.serialcom_uart=TWO_UART
+d21e.menu.serial.two_uart.build.serialcom_wire=ONE_WIRE
+d21e.menu.serial.two_uart.build.serialcom_spi=ONE_SPI
+d21e.menu.serial.three_uart_one_wire_no_spi=3x UART, 1x WIRE, 0x SPI
+d21e.menu.serial.three_uart_one_wire_no_spi.build.serialcom_uart=THREE_UART
+d21e.menu.serial.three_uart_one_wire_no_spi.build.serialcom_wire=ONE_WIRE
+d21e.menu.serial.three_uart_one_wire_no_spi.build.serialcom_spi=NO_SPI
+d21e.menu.serial.three_uart_no_wire_one_spi=3x UART, 0x WIRE, 1x SPI
+d21e.menu.serial.three_uart_no_wire_one_spi.build.serialcom_uart=THREE_UART
+d21e.menu.serial.three_uart_no_wire_one_spi.build.serialcom_wire=NO_WIRE
+d21e.menu.serial.three_uart_no_wire_one_spi.build.serialcom_spi=ONE_SPI
+d21e.menu.serial.four_uart=4x UART, 0x WIRE, 0x SPI
+d21e.menu.serial.four_uart.build.serialcom_uart=FOUR_UART
+d21e.menu.serial.four_uart.build.serialcom_wire=NO_WIRE
+d21e.menu.serial.four_uart.build.serialcom_spi=NO_SPI
+d21e.menu.serial.no_uart_one_wire_two_spi=0x UART, 1x WIRE, 2x SPI
+d21e.menu.serial.no_uart_one_wire_two_spi.build.serialcom_uart=NO_UART
+d21e.menu.serial.no_uart_one_wire_two_spi.build.serialcom_wire=ONE_WIRE
+d21e.menu.serial.no_uart_one_wire_two_spi.build.serialcom_spi=TWO_SPI
+
+d21e.menu.usb.cdc=CDC only
+d21e.menu.usb.cdc.build.usbcom=CDC_ONLY
+d21e.menu.usb.cdc.build.pid=0x0557
+d21e.menu.usb.hid=HID only
+d21e.menu.usb.hid.build.usbcom=HID_ONLY
+d21e.menu.usb.hid.build.pid=0x0B40
+d21e.menu.usb.cdc_hid=CDC & HID
+d21e.menu.usb.cdc_hid.build.usbcom=CDC_HID
+d21e.menu.usb.cdc_hid.build.pid=0x0856
+d21e.menu.usb.withcdc=with CDC
+d21e.menu.usb.withcdc.build.usbcom=WITH_CDC
+d21e.menu.usb.withcdc.build.pid=0x0B41
+d21e.menu.usb.nocdc=without CDC
+d21e.menu.usb.nocdc.build.usbcom=WITHOUT_CDC
+d21e.menu.usb.nocdc.build.pid=0x0A0C
+d21e.menu.usb.none=USB disabled
+d21e.menu.usb.none.build.usbcom=USB_DISABLED
+d21e.menu.usb.none.build.pid=0x0856
+
+
+# =================================================================
+# SAMD11C14A DevBoard
+# =================================================================
+d11c14a.name=SAMD11C DevBoard
+d11c14a.vid.0=0x16D0
+d11c14a.pid.0=0x0557
+d11c14a.vid.1=0x16D0
+d11c14a.pid.1=0x0856
+d11c14a.vid.2=0x16D0
+d11c14a.pid.2=0x0B41
+d11c14a.vid.3=0x16D0
+d11c14a.pid.3=0x0B40
+d11c14a.vid.4=0x16D0
+d11c14a.pid.4=0x0A0C
+d11c14a.vid.5=0x16D0
+d11c14a.pid.5=0x0856
+d11c14a.build.mcu=cortex-m0plus
+d11c14a.build.mathlib=arm_cortexM0l_math
+d11c14a.build.f_cpu=48000000L
+d11c14a.build.usb_product="SAMD11C DevBoard"
+d11c14a.build.usb_manufacturer="Wagiminator"
+d11c14a.build.board=SAMD_ZERO
+d11c14a.build.core=arduino
+d11c14a.build.variant=SAMD11C
+d11c14a.build.variant_system_lib=
+d11c14a.build.vid=0x16D0
+d11c14a.upload.protocol=sam-ba
+d11c14a.bootloader.tool=arduino:openocd
+
+d11c14a.menu.float.default=Print & String use auto-promoted doubles only
+d11c14a.menu.float.default.build.floatconfig=FLOAT_BOTH_DOUBLES_ONLY
+d11c14a.menu.float.print=Print uses separate singles and doubles
+d11c14a.menu.float.print.build.floatconfig=FLOAT_PRINT_SINGLES_DOUBLES
+d11c14a.menu.float.string=String uses separate singles and doubles
+d11c14a.menu.float.string.build.floatconfig=FLOAT_STRING_SINGLES_DOUBLES
+d11c14a.menu.float.both=Print & String use separate singles and doubles
+d11c14a.menu.float.both.build.floatconfig=FLOAT_BOTH_SINGLES_DOUBLES
+d11c14a.menu.config.disabled=config.h disabled
+d11c14a.menu.config.disabled.build.buildconfig=CONFIG_H_DISABLED
+d11c14a.menu.config.enabled=config.h enabled (mostly code size reductions)
+d11c14a.menu.config.enabled.build.buildconfig=CONFIG_H_ENABLED
+
+d11c14a.menu.clock.internal_usb=Internal USB Calibrated Oscillator
+d11c14a.menu.clock.internal_usb.build.clockconfig=CLOCKCONFIG_INTERNAL_USB
+d11c14a.menu.clock.internal=Internal Oscillator
+d11c14a.menu.clock.internal.build.clockconfig=CLOCKCONFIG_INTERNAL
+# d11c14a.menu.clock.crystal_32k=32kHz Crystal
+# d11c14a.menu.clock.crystal_32k.build.clockconfig=CLOCKCONFIG_32768HZ_CRYSTAL
+# d11c14a.menu.clock.crystal_hs=High Speed Crystal
+# d11c14a.menu.clock.crystal_hs.build.clockconfig=CLOCKCONFIG_HS_CRYSTAL
+
+d11c14a.menu.timer.timer_732Hz=732.4Hz (16-bit)
+d11c14a.menu.timer.timer_732Hz.build.timerconfig=TIMER_732Hz
+d11c14a.menu.timer.timer_366Hz=366.2Hz (16-bit)
+d11c14a.menu.timer.timer_366Hz.build.timerconfig=TIMER_366Hz
+d11c14a.menu.timer.timer_244Hz=244.1Hz (16-bit)
+d11c14a.menu.timer.timer_244Hz.build.timerconfig=TIMER_244Hz
+d11c14a.menu.timer.timer_183Hz=183.1Hz (16-bit)
+d11c14a.menu.timer.timer_183Hz.build.timerconfig=TIMER_183Hz
+d11c14a.menu.timer.timer_146Hz=146.5Hz (16-bit)
+d11c14a.menu.timer.timer_146Hz.build.timerconfig=TIMER_146Hz
+d11c14a.menu.timer.timer_122Hz=122.1Hz (16-bit)
+d11c14a.menu.timer.timer_122Hz.build.timerconfig=TIMER_122Hz
+d11c14a.menu.timer.timer_105Hz=104.6Hz (16-bit)
+d11c14a.menu.timer.timer_105Hz.build.timerconfig=TIMER_105Hz
+d11c14a.menu.timer.timer_81Hz=81.38Hz (16-bit)
+d11c14a.menu.timer.timer_81Hz.build.timerconfig=TIMER_81Hz
+d11c14a.menu.timer.timer_61Hz=61.04Hz (16-bit)
+d11c14a.menu.timer.timer_61Hz.build.timerconfig=TIMER_61Hz
+d11c14a.menu.timer.timer_31Hz=30.52Hz (16-bit)
+d11c14a.menu.timer.timer_31Hz.build.timerconfig=TIMER_31Hz
+d11c14a.menu.timer.timer_187500Hz=187500Hz (8-bit)
+d11c14a.menu.timer.timer_187500Hz.build.timerconfig=TIMER_187500Hz
+d11c14a.menu.timer.timer_93750Hz=93750Hz (8-bit)
+d11c14a.menu.timer.timer_93750Hz.build.timerconfig=TIMER_93750Hz
+d11c14a.menu.timer.timer_62500Hz=62500Hz (8-bit)
+d11c14a.menu.timer.timer_62500Hz.build.timerconfig=TIMER_62500Hz
+d11c14a.menu.timer.timer_37500Hz=37500Hz (8-bit)
+d11c14a.menu.timer.timer_37500Hz.build.timerconfig=TIMER_37500Hz
+d11c14a.menu.timer.timer_20833Hz=20833Hz (8-bit)
+d11c14a.menu.timer.timer_20833Hz.build.timerconfig=TIMER_20833Hz
+d11c14a.menu.timer.timer_12500Hz=12500Hz (8-bit)
+d11c14a.menu.timer.timer_12500Hz.build.timerconfig=TIMER_12500Hz
+d11c14a.menu.timer.timer_7500Hz=7500Hz (8-bit)
+d11c14a.menu.timer.timer_7500Hz.build.timerconfig=TIMER_7500Hz
+d11c14a.menu.timer.timer_4166Hz=4166Hz (8-bit)
+d11c14a.menu.timer.timer_4166Hz.build.timerconfig=TIMER_4166Hz
+d11c14a.menu.timer.timer_2930Hz=2930Hz (8-bit)
+d11c14a.menu.timer.timer_2930Hz.build.timerconfig=TIMER_2930Hz
+d11c14a.menu.timer.timer_1465Hz=1465Hz (8-bit)
+d11c14a.menu.timer.timer_1465Hz.build.timerconfig=TIMER_1465Hz
+
+d11c14a.build.extra_flags=-D__SAMD11C14A__ {build.usb_flags} -DARM_MATH_CM0PLUS
+d11c14a.build.ldscript=flash_16KB.ld
+d11c14a.build.openocdscript=openocd_scripts/SAMD11C14A.cfg
+d11c14a.bootloader.file=sam_ba_SAMD11C_DevBoard_SAMD11C14A.bin
+
+d11c14a.menu.bootloader.4kb=4kB Bootloader
+d11c14a.menu.bootloader.4kb.build.bootloader_size=__4KB_BOOTLOADER__
+d11c14a.menu.bootloader.4kb.build.ldscript_path=linker_scripts/gcc/4KB_Bootloader
+d11c14a.menu.bootloader.4kb.upload.tool=SAMD_DevBoards:bossac
+d11c14a.menu.bootloader.4kb.upload.use_1200bps_touch=true
+d11c14a.menu.bootloader.4kb.upload.wait_for_upload_port=true
+d11c14a.menu.bootloader.4kb.upload.native_usb=true
+d11c14a.menu.bootloader.4kb.upload.maximum_size=12288
+
+d11c14a.menu.bootloader.0kb=No Bootloader
+d11c14a.menu.bootloader.0kb.build.bootloader_size=__NO_BOOTLOADER__
+d11c14a.menu.bootloader.0kb.build.ldscript_path=linker_scripts/gcc/No_Bootloader
+d11c14a.menu.bootloader.0kb.upload.tool=arduino:openocd
+d11c14a.menu.bootloader.0kb.upload.use_1200bps_touch=false
+d11c14a.menu.bootloader.0kb.upload.wait_for_upload_port=false
+d11c14a.menu.bootloader.0kb.upload.native_usb=false
+d11c14a.menu.bootloader.0kb.upload.maximum_size=16384
+
+d11c14a.menu.serial.one_uart=1x UART, 1x WIRE, 0x SPI
+d11c14a.menu.serial.one_uart.build.serialcom_uart=ONE_UART
+d11c14a.menu.serial.one_uart.build.serialcom_wire=ONE_WIRE
+d11c14a.menu.serial.one_uart.build.serialcom_spi=NO_SPI
+d11c14a.menu.serial.two_uart=2x UART, 0x WIRE, 0x SPI
+d11c14a.menu.serial.two_uart.build.serialcom_uart=TWO_UART
+d11c14a.menu.serial.two_uart.build.serialcom_wire=NO_WIRE
+d11c14a.menu.serial.two_uart.build.serialcom_spi=NO_SPI
+d11c14a.menu.serial.one_uart_no_wire_one_spi=1x UART, 0x WIRE, 1x SPI
+d11c14a.menu.serial.one_uart_no_wire_one_spi.build.serialcom_uart=ONE_UART
+d11c14a.menu.serial.one_uart_no_wire_one_spi.build.serialcom_wire=NO_WIRE
+d11c14a.menu.serial.one_uart_no_wire_one_spi.build.serialcom_spi=ONE_SPI
+d11c14a.menu.serial.no_uart=0x UART, 1x WIRE, 1x SPI
+d11c14a.menu.serial.no_uart.build.serialcom_uart=NO_UART
+d11c14a.menu.serial.no_uart.build.serialcom_wire=ONE_WIRE
+d11c14a.menu.serial.no_uart.build.serialcom_spi=ONE_SPI
+
+d11c14a.menu.usb.cdc=CDC only
+d11c14a.menu.usb.cdc.build.usbcom=CDC_ONLY
+d11c14a.menu.usb.cdc.build.pid=0x0557
+d11c14a.menu.usb.hid=HID only
+d11c14a.menu.usb.hid.build.usbcom=HID_ONLY
+d11c14a.menu.usb.hid.build.pid=0x0B40
+d11c14a.menu.usb.cdc_hid=CDC & HID
+d11c14a.menu.usb.cdc_hid.build.usbcom=CDC_HID
+d11c14a.menu.usb.cdc_hid.build.pid=0x0856
+d11c14a.menu.usb.withcdc=with CDC
+d11c14a.menu.usb.withcdc.build.usbcom=WITH_CDC
+d11c14a.menu.usb.withcdc.build.pid=0x0B41
+d11c14a.menu.usb.nocdc=without CDC
+d11c14a.menu.usb.nocdc.build.usbcom=WITHOUT_CDC
+d11c14a.menu.usb.nocdc.build.pid=0x0A0C
+d11c14a.menu.usb.none=USB disabled
+d11c14a.menu.usb.none.build.usbcom=USB_DISABLED
+d11c14a.menu.usb.none.build.pid=0x0856
