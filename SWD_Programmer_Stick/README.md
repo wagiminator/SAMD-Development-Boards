@@ -9,6 +9,8 @@ CMSIS-DAP provides a standardized way to access the Coresight Debug Access Port 
 # Compiling and Installing Firmware
 Since there is no dedicated header for programming on the board, the microcontroller should be programmed before soldering it on. The [SAMD Programmer Adapter](https://github.com/wagiminator/SAMD-Development-Boards/tree/main/SAMD_Programmer_Adapter) is helpful for this. In order to program the microcontroller after soldering, the solder pads on the underside of the board must be used.
 
+![SWD_Programmer_Stick_pic3.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_Programmer_Stick_pic3.jpg)
+
 ## Compiling Firmware
 - Install [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
 - Run "make all" inside the "source" folder
@@ -45,7 +47,7 @@ Debuggers based on the open source project [nanoDAP](https://github.com/wuxx/nan
 ### DAPLink Emulator (Tested)
 These CMSIS-DAP compliant devices are available on [aliexpress](https://aliexpress.com/wholesale?SearchText=cmsis-dap+daplink) for around 10 €. They work fine too.
 
-![SWD_nanoDAP.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_nanoDAP.jpg)
+![SWD_DAPLink.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_DAPLink.jpg)
 
 ### SAMD Development Boards (Not Tested)
 There are options to use the EDBG of some development boards for programming external device, or to program them using firmware. Information on this can be found on the following pages:
@@ -63,5 +65,4 @@ There are options to use the EDBG of some development boards for programming ext
 7. [Adafruit DAP](https://github.com/adafruit/Adafruit_DAP)
 
 ![SWD_Programmer_Stick_pic2.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_Programmer_Stick_pic2.jpg)
-![SWD_Programmer_Stick_pic3.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_Programmer_Stick_pic3.jpg)
 ![SWD_Programmer_Stick_pic4.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_Programmer_Stick_pic4.jpg)
