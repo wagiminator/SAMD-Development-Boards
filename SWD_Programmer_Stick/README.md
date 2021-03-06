@@ -45,7 +45,7 @@ Debuggers based on the open source project [nanoDAP](https://github.com/wuxx/nan
 ![SWD_nanoDAP.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_nanoDAP.jpg)
 
 ### DAPLink Emulator (Tested)
-These CMSIS-DAP compliant devices are available on [aliexpress](https://aliexpress.com/wholesale?SearchText=cmsis-dap+daplink) for around 10 €. They work fine too.
+These CMSIS-DAP compliant devices are available on [aliexpress](https://aliexpress.com/wholesale?SearchText=cmsis-dap+daplink) for around €10. They work fine too.
 
 ![SWD_DAPLink.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_DAPLink.jpg)
 
