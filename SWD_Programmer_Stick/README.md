@@ -50,7 +50,7 @@ These CMSIS-DAP compliant devices are available on [aliexpress](https://aliexpre
 ![SWD_DAPLink.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_DAPLink.jpg)
 
 ### SAMD Development Boards (Not Tested)
-There are options to use the EDBG of some development boards for programming external device, or to program them using firmware. Information on this can be found on the following pages:
+There are options to use the EDBG of some development boards for programming an external device, or to program them using a special firmware. Information on this can be found on the following pages:
 - https://www.avdweb.nl/arduino/samd21/samd21-programmer
 - https://learn.adafruit.com/programming-an-m0-using-an-arduino#
 - https://github.com/adafruit/Adafruit_DAP
