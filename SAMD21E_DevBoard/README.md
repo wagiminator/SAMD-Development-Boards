@@ -9,7 +9,7 @@ The following microcontrollers (TQFP-32 package) can be used with this developme
 
 |Controller|Flash|SRAM|
 |:-|:-|:-|
-|ATSAMD21E15A/B|32 KB|4KB|
+|ATSAMD21E15A/B|32 KB|4 KB|
 |ATSAMD21E16A/B|64 KB|8 KB|
 |ATSAMD21E17A|128 KB|16 KB|
 |ATSAMD21E18A|256 KB|32 KB|
@@ -53,7 +53,7 @@ All microcontrollers have the following features:
 - Open the Arduino IDE
 - Go to **Tools -> Board -> SAMD DevBoards** and select **SAMD21E DevBoard**
 - Go to **Tools -> Microcontroller** and select the MCU of the board
-- Go to **Tools -> Bootloader** and select 8kB Bootloader
+- Go to **Tools -> Bootloader** and select 8KB Bootloader
 - Go to **Tools -> Programmer** and select your programmer
 - Connect your programmer to the board und to a USB port of your PC
 - Power the board

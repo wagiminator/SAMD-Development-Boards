@@ -33,7 +33,7 @@ This Arduino Core is based on the [MattairTech SAMD Core](https://github.com/mat
 - Open Arduino IDE
 - Go to **Tools -> Board -> SAMD DevBoards** and select your board
 - Go to **Tools -> Microcontroller** and select the MCU of the board (SAMD21E DevBoard only)
-- Go to **Tools -> Bootloader** and select 4kB or 8kB Bootloader (depending on the board)
+- Go to **Tools -> Bootloader** and select 4KB or 8KB Bootloader (depending on the board)
 - Go to **Tools -> Programmer** and select your programmer
 - Connect your programmer to the board und to a USB port of your PC
 - Power the board

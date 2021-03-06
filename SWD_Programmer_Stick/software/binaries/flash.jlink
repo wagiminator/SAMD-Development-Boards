@@ -1,0 +1,10 @@
+device atsamd11c14
+if swd
+speed 4000
+loadfile samd_bootprot_clear.mot
+r
+loadbin swd_programmer_stick.bin,0
+verifybin swd_programmer_stick.bin,0
+r
+g
+exit

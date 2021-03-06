@@ -42,7 +42,7 @@ The SAMD11C14A is a low-power microcontroller using the 32-bit ARM Cortex-M0+ pr
 - [Install SAMD Core](https://github.com/wagiminator/SAMD-Development-Boards/tree/main/ArduinoCore-samd)
 - Open the Arduino IDE
 - Go to **Tools -> Board -> SAMD DevBoards** and select **SAMD11C DevBoard**
-- Go to **Tools -> Bootloader** and select 4kB Bootloader
+- Go to **Tools -> Bootloader** and select 4KB Bootloader
 - Go to **Tools -> Programmer** and select your programmer
 - Connect your programmer to the corresponding pins of the board und to a USB port of your PC
 - Power the board
