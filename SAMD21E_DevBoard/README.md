@@ -67,10 +67,11 @@ With the uf2 bootloader (SAMD21E18A only) the board also appears in the file man
 If you want to install a bootloader without the Arduino IDE, refer to the readme.txt inside the bootloader folder.
 
 # References, Links and Notes
-1. [SAM D21/DA1 Family Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_DataSheet_DS40001882F.pdf)
-2. [Arduino SAMD Core](https://github.com/arduino/ArduinoCore-samd)
-3. [MattairTech SAMD Core](https://github.com/mattairtech/ArduinoCore-samd)
-4. [UF2-SAMDX1 Bootloader](https://github.com/microsoft/uf2-samdx1)
+1. [EasyEDA Design Files](https://easyeda.com/wagiminator/samd21e-development-board)
+2. [SAM D21/DA1 Family Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_DataSheet_DS40001882F.pdf)
+3. [Arduino SAMD Core](https://github.com/arduino/ArduinoCore-samd)
+4. [MattairTech SAMD Core](https://github.com/mattairtech/ArduinoCore-samd)
+5. [UF2-SAMDX1 Bootloader](https://github.com/microsoft/uf2-samdx1)
 
 ![SAMD21E_DevBoard_pic1.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD21E_DevBoard/documentation/SAMD21E_DevBoard_pic1.jpg)
 ![SAMD21E_DevBoard_pic2.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD21E_DevBoard/documentation/SAMD21E_DevBoard_pic2.jpg)

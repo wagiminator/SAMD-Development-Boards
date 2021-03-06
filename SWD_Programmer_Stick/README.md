@@ -64,10 +64,11 @@ Connect the SWD Programmer Stick to the target board via the 10-pin connector or
 ![SWD_Programmer_Stick_pic4.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_Programmer_Stick_pic4.jpg)
 
 # References, Links and Notes
-1. [Original Free-DAP Project](https://github.com/ataradov/free-dap)
-2. [CMSIS-DAP Handbook](https://os.mbed.com/handbook/CMSIS-DAP)
-3. [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
-4. [OpenOCD](http://openocd.org/)
-5. [SEGGER J-Link Commander](http://www.segger.com/download-jlink.html)
-6. [nanoDAP](https://github.com/wuxx/nanoDAP)
-7. [Adafruit DAP](https://github.com/adafruit/Adafruit_DAP)
+1. [EasyEDA Design Files](https://easyeda.com/wagiminator/samd11c-swd-programmer)
+2. [Original Free-DAP Project](https://github.com/ataradov/free-dap)
+3. [CMSIS-DAP Handbook](https://os.mbed.com/handbook/CMSIS-DAP)
+4. [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
+5. [OpenOCD](http://openocd.org/)
+6. [SEGGER J-Link Commander](http://www.segger.com/download-jlink.html)
+7. [nanoDAP](https://github.com/wuxx/nanoDAP)
+8. [Adafruit DAP](https://github.com/adafruit/Adafruit_DAP)

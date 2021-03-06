@@ -54,9 +54,10 @@ If a sketch with CDC support is installed on the board, the bootloader is activa
 If you want to install a bootloader without the Arduino IDE, refer to the readme.txt inside the bootloader folder.
 
 # References, Links and Notes
-1. [SAM D11 Family Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42363-SAM-D11_Datasheet.pdf)
-2. [Arduino SAMD Core](https://github.com/arduino/ArduinoCore-samd)
-3. [MattairTech SAMD Core](https://github.com/mattairtech/ArduinoCore-samd)
+1. [EasyEDA Design Files](https://easyeda.com/wagiminator/samd11c-development-board)
+2. [SAM D11 Family Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42363-SAM-D11_Datasheet.pdf)
+3. [Arduino SAMD Core](https://github.com/arduino/ArduinoCore-samd)
+4. [MattairTech SAMD Core](https://github.com/mattairtech/ArduinoCore-samd)
 
 ![SAMD11C_DevBoard_pic1.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD11C_DevBoard/documentation/SAMD11C_DevBoard_pic1.jpg)
 ![SAMD11C_DevBoard_pic2.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD11C_DevBoard/documentation/SAMD11C_DevBoard_pic2.jpg)
