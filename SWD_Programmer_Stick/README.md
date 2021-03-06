@@ -3,11 +3,13 @@ The SWD Programmer Stick is a CMSIS-DAP compliant debugging probe with SWD proto
 
 ![SWD_Programmer_Stick_pic1.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_Programmer_Stick_pic1.jpg)
 
-# CMSIS-DAP Explanation
+# CMSIS-DAP
 CMSIS-DAP provides a standardized way to access the Coresight Debug Access Port (DAP) of an ARM Cortex microcontroller via USB. CMSIS-DAP is generally implemented as an on-board interface chip, providing direct USB connection from a development board to a debugger running on a host computer on one side, and over JTAG (Joint Test Action Group) or SWD (Serial Wire Debug) to the target device to access the Coresight DAP on the other. For more information refer to the [CMSIS-DAP Handbook](https://os.mbed.com/handbook/CMSIS-DAP).
 
+![CMSIS-DAP.png](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/CMSIS-DAP.png)
+
 # Compiling and Installing Firmware
-Since there is no dedicated header for programming on the board, the microcontroller should be programmed before soldering it on. The [SAMD Programmer Adapter](https://github.com/wagiminator/SAMD-Development-Boards/tree/main/SAMD_Programmer_Adapter) is helpful for this. In order to program the microcontroller after soldering, the solder pads on the underside of the board must be used.
+Since there is no dedicated header for programming on the board, the microcontroller should be programmed before soldering. The [SAMD Programmer Adapter](https://github.com/wagiminator/SAMD-Development-Boards/tree/main/SAMD_Programmer_Adapter) is helpful for this. In order to program the microcontroller after soldering, the solder pads on the underside of the board must be used.
 
 ![SWD_Programmer_Stick_pic3.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_Programmer_Stick_pic3.jpg)
 
@@ -35,7 +37,7 @@ Since there is no dedicated header for programming on the board, the microcontro
 Unfortunately, you need another programmer to program the programmer. Here are a few cheap ways to do it:
 
 ### SEGGER J-Link EDU Mini (Tested)
-J-LINK EDU Mini is a version of the J-Link EDU in a reduced form factor with identical functionality as the larger devices. It has been designed to allow students and educational facilities as well as hobbyists access to top of the line debug probe technology. The device is available for around €16, the uploads are fast and it works reliably. It is not approved for commercial use.
+[J-LINK EDU Mini](https://www.segger.com/products/debug-probes/j-link/models/j-link-edu-mini/) is a version of the J-Link EDU in a reduced form factor with identical functionality as the larger devices. It has been designed to allow students and educational facilities as well as hobbyists access to top of the line debug probe technology. The device is available for around €16, the uploads are fast and it works reliably. It is not approved for commercial use.
 
 ![SWD_segger.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_segger.jpg)
 
@@ -52,8 +54,11 @@ These CMSIS-DAP compliant devices are available on [aliexpress](https://aliexpre
 ### SAMD Development Boards (Not Tested)
 There are options to use the EDBG of some development boards for programming an external device, or to program them using a special firmware. Information on this can be found on the following pages:
 - https://www.avdweb.nl/arduino/samd21/samd21-programmer
-- https://learn.adafruit.com/programming-an-m0-using-an-arduino#
+- https://learn.adafruit.com/programming-an-m0-using-an-arduino
 - https://github.com/adafruit/Adafruit_DAP
+
+# Operating Instructions
+Connect the SWD Programmer Stick to the target board via the 10-pin connector or the pin header (RST / DIO / CLK / GND). Make sure the target board is powered. You can supply power via the 3V3 pin (max 150 mA) or the 5V pin (max 400 mA). Plug the SWD Programmer Stick into a USB port on your PC. Since it is recognized as a Human Interface Device (HID), no driver installation is required. The SWD Programmer Stick should work with any debugging software that supports CMSIS-DAP (e.g. OpenOCD). Of course, it also works with the [SAMD DevBoards](https://github.com/wagiminator/SAMD-Development-Boards) in the Arduino IDE (Tools -> Programmer -> Generic CMSIS-DAP).
 
 # References, Links and Notes
 1. [Original Free-DAP Project](https://github.com/ataradov/free-dap)
