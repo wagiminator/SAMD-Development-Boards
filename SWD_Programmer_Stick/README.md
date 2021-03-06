@@ -1,5 +1,5 @@
 # SWD Programmer Stick
-The SWD Programmer Stick is a CMSIS-DAP compliant debugging probe with SWD protocol support based on [Free-DAP](https://github.com/ataradov/free-dap) by Alex Taradov. It can be used to program Microchip SAM and other ARM-based microcontrollers.
+The SWD Programmer Stick is a CMSIS-DAP compliant debugging probe with SWD protocol support based on [Free-DAP](https://github.com/ataradov/free-dap) by Alex Taradov. It can be used to program Microchip SAM and other ARM-based microcontrollers. The SWD Programmer Stick is built around an ATSAMD11C14A microcontroller.
 
 ![SWD_Programmer_Stick_pic1.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_Programmer_Stick_pic1.jpg)
 
