@@ -60,6 +60,9 @@ There are options to use the EDBG of some development boards for programming an 
 # Operating Instructions
 Connect the SWD Programmer Stick to the target board via the 10-pin connector or the pin header (RST / DIO / CLK / GND). Make sure the target board is powered. You can supply power via the 3V3 pin (max 150 mA) or the 5V pin (max 400 mA). Plug the SWD Programmer Stick into a USB port on your PC. Since it is recognized as a Human Interface Device (HID), no driver installation is required. The SWD Programmer Stick should work with any debugging software that supports CMSIS-DAP (e.g. OpenOCD). Of course, it also works with the [SAMD DevBoards](https://github.com/wagiminator/SAMD-Development-Boards) in the Arduino IDE (Tools -> Programmer -> Generic CMSIS-DAP).
 
+![SWD_Programmer_Stick_pic2.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_Programmer_Stick_pic2.jpg)
+![SWD_Programmer_Stick_pic4.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_Programmer_Stick_pic4.jpg)
+
 # References, Links and Notes
 1. [Original Free-DAP Project](https://github.com/ataradov/free-dap)
 2. [CMSIS-DAP Handbook](https://os.mbed.com/handbook/CMSIS-DAP)
@@ -68,6 +71,3 @@ Connect the SWD Programmer Stick to the target board via the 10-pin connector or
 5. [SEGGER J-Link Commander](http://www.segger.com/download-jlink.html)
 6. [nanoDAP](https://github.com/wuxx/nanoDAP)
 7. [Adafruit DAP](https://github.com/adafruit/Adafruit_DAP)
-
-![SWD_Programmer_Stick_pic2.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_Programmer_Stick_pic2.jpg)
-![SWD_Programmer_Stick_pic4.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_Programmer_Stick_pic4.jpg)
