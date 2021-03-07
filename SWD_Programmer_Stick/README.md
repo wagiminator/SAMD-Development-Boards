@@ -72,3 +72,5 @@ Connect the SWD Programmer Stick to the target board via the 10-pin connector or
 6. [SEGGER J-Link Commander](http://www.segger.com/download-jlink.html)
 7. [nanoDAP](https://github.com/wuxx/nanoDAP)
 8. [Adafruit DAP](https://github.com/adafruit/Adafruit_DAP)
+9. [ARMmbed DAPLink](https://github.com/ARMmbed/DAPLink)
+10. [Black Magic Probe](https://github.com/blacksphere/blackmagic)
