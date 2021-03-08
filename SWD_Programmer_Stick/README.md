@@ -9,7 +9,7 @@ CMSIS-DAP provides a standardized way to access the Coresight Debug Access Port 
 ![CMSIS-DAP.png](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/CMSIS-DAP.png)
 
 # Compiling and Installing Firmware
-Since there is no dedicated header for programming on the board, the microcontroller should be programmed before soldering. The [SAMD Programmer Adapter](https://github.com/wagiminator/SAMD-Development-Boards/tree/main/SAMD_Programmer_Adapter) is helpful for this. In order to program the microcontroller after soldering, the solder pads on the underside of the board must be used.
+You can either compile the firmware yourself, or you can use the precompiled binary. Since there is no dedicated header for programming on the board, the microcontroller should be programmed before soldering. The [SAMD Programmer Adapter](https://github.com/wagiminator/SAMD-Development-Boards/tree/main/SAMD_Programmer_Adapter) is helpful for this. In order to program the microcontroller after soldering, the solder pads on the underside of the board must be used.
 
 ![SWD_Programmer_Stick_pic3.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SWD_Programmer_Stick/documentation/SWD_Programmer_Stick_pic3.jpg)
 
