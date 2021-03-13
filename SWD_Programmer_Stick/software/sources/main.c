@@ -51,15 +51,6 @@
 #define APP_EP_SEND    1
 #define APP_EP_RECV    2
 
-#if defined(BOARD_SWD_USB_MINI)
-  #define APP_PWM_PER    0xffff
-  #define APP_PWM_DIM    0xf000
-  #define APP_PWM_BRIGHT 0
-#elif defined(BOARD_SWD_USB_STD)
-  #define APP_PWM_PER    0xffff
-  #define APP_PWM_DIM    0x1000
-  #define APP_PWM_BRIGHT 0xf000
-#endif
 
 /*- Variables ---------------------------------------------------------------*/
 static alignas(4) uint8_t app_request_buffer[DAP_CONFIG_PACKET_SIZE];
@@ -114,30 +105,13 @@ static void sys_init(void)
 static void led_init(void)
 {
   HAL_GPIO_LED_out();
-  HAL_GPIO_LED_pmuxen(HAL_GPIO_PMUX_F);
-
-  PM->APBCMASK.reg |= PM_APBCMASK_TCC0;
-
-  GCLK->CLKCTRL.reg = GCLK_CLKCTRL_ID(TCC0_GCLK_ID) |
-      GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN(0);
-
-  TCC0->CTRLA.reg =
-      TCC_CTRLA_PRESCALER(TCC_CTRLA_PRESCALER_DIV1_Val) |
-      TCC_CTRLA_PRESCSYNC(TCC_CTRLA_PRESCSYNC_PRESC_Val);
-
-  TCC0->WAVE.reg = TCC_WAVE_WAVEGEN_NPWM;
-  TCC0->PER.reg = APP_PWM_PER;
-  TCC0->CC[0].reg = APP_PWM_DIM;
-  TCC0->CTRLA.bit.ENABLE = 1;
+  HAL_GPIO_LED_set();
 }
 
 //-----------------------------------------------------------------------------
 void app_led_set_state(int state)
 {
-  TCC0->CTRLA.bit.ENABLE = 0;
-  TCC0->COUNT.reg = 0;
-  TCC0->CC[0].reg = state ? APP_PWM_BRIGHT : APP_PWM_DIM;
-  TCC0->CTRLA.bit.ENABLE = 1;
+  state ? HAL_GPIO_LED_clr() : HAL_GPIO_LED_set();
 }
 
 //-----------------------------------------------------------------------------
