@@ -9,6 +9,11 @@ Development board for the ATSAMD11C14A 32-bit ARM Cortex-M0+ microcontroller wit
 
 ![SAMD11C_DevBoard_pic1.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD11C_DevBoard/documentation/SAMD11C_DevBoard_pic1.jpg)
 
+## [SAMD11D Development Board](https://github.com/wagiminator/SAMD-Development-Boards/tree/main/SAMD11D_DevBoard)
+Development board for the ATSAMD11D14A (20-pin SOIC) 32-bit ARM Cortex-M0+ microcontroller with native USB, 3.3V voltage regulator and support for Arduino IDE.
+
+![SAMD11D_DevBoard_pic1.jpg](https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/SAMD11D_DevBoard/documentation/SAMD11D_DevBoard_pic1.jpg)
+
 ## [SAMD21E Development Board](https://github.com/wagiminator/SAMD-Development-Boards/tree/main/SAMD21E_DevBoard)
 Development board for the ATSAMD21E series of 32-bit ARM Cortex-M0+ microcontrollers with native USB, 32.768 kHz crystal, 3.3V voltage regulator and support for Arduino IDE.
 

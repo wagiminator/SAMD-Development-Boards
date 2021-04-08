@@ -57,6 +57,56 @@
               "version": "1.3.0"
             }
           ]
+        },
+        {
+          "name": "SAMD Development Boards",
+          "architecture": "samd",
+          "version": "0.2.0",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://raw.githubusercontent.com/wagiminator/SAMD-Development-Boards/main/packages/SAMD_DevBoards_0.2.0.tar.gz",
+          "archiveFileName": "SAMD_DevBoards_0.2.0.tar.gz",
+          "checksum": "SHA-256:f5220c0e6fe6f9d3a3a08c90402dde22e789cdaf8f2a42de5c5e81e48e77861c",
+          "size": "316422",
+          "boards": [
+            {"name": "SAMD11C DevBoard"},
+            {"name": "SAMD11D DevBoard"},
+            {"name": "SAMD21E DevBoard"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "packager": "SAMD_DevBoards",
+              "name": "bossac",
+              "version": "1.7.0-mattairtech-3"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.10.0-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "SAMD_DevBoards",
+              "name": "CMSIS-Atmel",
+              "version": "3.49.1"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
         }
 		  ],
       "tools": [

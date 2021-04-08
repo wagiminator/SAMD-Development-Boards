@@ -16,33 +16,6 @@
 
 # Modified 2021 by Stefan Wagner, https://github.com/wagiminator
 
-edbg.name=Atmel EDBG
-edbg.communication=USB
-edbg.protocol=
-edbg.program.protocol=
-edbg.program.interface=cmsis-dap
-edbg.program.transport=swd
-edbg.program.tool=openocd
-edbg.program.extra_params=
-
-atmel_ice.name=Atmel-ICE
-atmel_ice.communication=USB
-atmel_ice.protocol=
-atmel_ice.program.protocol=
-atmel_ice.program.interface=cmsis-dap
-atmel_ice.program.transport=swd
-atmel_ice.program.tool=openocd
-atmel_ice.program.extra_params=cmsis_dap_vid_pid 0x03eb 0x2141;
-
-sam_ice.name=Atmel SAM-ICE
-sam_ice.communication=USB
-sam_ice.protocol=
-sam_ice.program.protocol=
-sam_ice.program.interface=cmsis-dap
-sam_ice.program.transport=swd
-sam_ice.program.tool=openocd
-sam_ice.program.extra_params=
-
 cmsis_dap.name=Generic CMSIS-DAP
 cmsis_dap.communication=USB
 cmsis_dap.protocol=
